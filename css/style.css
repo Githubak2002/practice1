@@ -1,0 +1,425 @@
+/* =========== google fonts ======== */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
+
+/* google fonts
+h1{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h2{
+    font-family: 'Nova Cut', cursive;
+}
+
+h3{
+    font-family: 'Changa', sans-serif;
+} */
+
+/* Font size for Large devices */
+/* @media screen and (min-width: 968px) {
+    :root{
+--big-font-size: 3rem;
+--h1-font-size: 2.25rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 1.25rem;
+--normal-font-size: 1rem;
+--small-font-size: .875rem;
+--smaller-font-size: .813rem;
+    }
+} */
+
+/* =========================================== Base =========================================== */
+*{
+    box-sizing: border-box; padding: 0px; margin:  0px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Nova Cut', cursive;
+    font-family: 'Changa', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(rgb(rgba(15, 14, 14, 0.875)),rgb(104, 27, 8),rgba(30, 25, 25, 0.952)); */
+    /* height: 100vh;
+    width: 100%;
+    background-image: url(/img/figma1.jpg);
+    background-size: cover;
+    background-position: center; */
+}
+:root{
+    --h3b: 1.4rem;  /* for h3, h2 and h1*/
+    --h2b: 1.8rem;
+    --h1b: 2.2rem;
+    /* --light-ts:0px 4px 10px rgb(0, 157, 255, 0.8);
+    --light-ts:0px 0px 0px rgb(0, 157, 255, 0.8);
+    --ts: 0px 10px 18px rgb(0, 255, 251);
+    --ts: 0px 0px 0px rgb(0, 255, 251); */
+}
+
+
+/* ========================= nav bar ============================ */
+#header{
+    color:white;
+    /* margin: 0px;    padding:  0px; */
+    /* text-shadow: 5px 5px 5px rgb(161, 156, 156); */
+}
+#nav01{
+    --bgsc: rgb(0, 225, 255);
+    margin: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    color:#ffffff;
+    /* text-shadow: 5px 5px 5px rgb(0, 0, 0); */
+    text-shadow: 2px 4px 0px rgb(0, 0, 0),2px 4px 0px rgb(255, 255, 255),2px 4px 0px rgb(0, 0, 0),2px 4px 10px rgb(255, 255, 255);
+    /* text-shadow: 2px 4px 0px rgb(0, 0, 0),2px 4px 0px var(--bgsc),2px 4px 0px rgb(0, 0, 0),2px 4px 10px var(--bgsc); */
+
+
+    /* border: 2px solid black; */
+}
+
+#navlogo{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: 950;
+    /* border: 2px solid blueviolet;
+    margin: 2px; */
+}
+
+#rightside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    /* margin: 2px;
+    border: 2px solid blueviolet;   */
+}
+
+#rightside ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+#rightside ul li a{
+    font-size: 1.7rem;
+    font-weight: 950;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    /* text-shadow: 6px 6px 20px rgb(0, 225, 255); */
+    position: relative;
+}
+
+#rightside ul li a::after{
+    /* color: red; */
+    content: '';
+    width: 0;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5sec;
+ }
+
+#rightside ul li a:hover::after{
+    width: 100%;
+}
+
+/* =================================== header-text and img ===================================== */
+
+#header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-txt{
+    color: rgb(255, 255, 255);
+    width: 55%;
+    font-size: 2.1rem;
+    font-weight: 900;
+    margin: 2% 0% 5% 18%;
+    text-shadow: 5px 5px 5px black;
+    text-shadow: 0px 0px 0px rgb(0, 225, 255);
+    /* border: 2px solid white; */
+}
+#header-txt span{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px black;
+}
+
+#header-image{
+    margin: 2% 15% 5% 5%;
+    /* border: 2px solid white; */
+    width: 600px;
+    height: 410px;
+    /* border-radius: 50%; */
+}
+#header-image img{
+    position: relative;
+    top: -50px;
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (max-width: 600px){
+    #header-image img{
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* ====================================== about ======================================= */
+
+
+.h1-class{
+    text-shadow: 5px 5px 20px rgb(0, 225, 255);
+    text-shadow: 0px 0px 0px rgb(0, 225, 255);
+}
+/* .shadow{
+    text-shadow: 5px 5px 20px rgb(0, 225, 255);
+} */
+#h1-05
+{
+    display: block;
+    margin: 8% 20px 2% 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+#div1{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div1 img{
+    width: 65%;
+    height: auto;
+    border-radius: 10%;
+    /* border: 2px solid white; */
+    box-shadow: 0px 6px 30px rgb(59, 181, 252),0px 10px 30px rgb(0, 0, 0),0px 10px 30px rgb(0, 0, 0),0px 5px 30px rgb(255, 255, 255);
+
+    /* background-size: cover; */
+
+}
+#div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.08cm;
+
+}
+.mainabt{
+    margin: 0% 20px ;
+    padding: 1% 0px 1% 0px;
+    /* border: 2px solid white; */
+    
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-template-columns: repeat(auto-fit ,minmax(350px,470px)) ;
+    justify-content: center;
+    /* align-items: center; */
+    row-gap: 20px;
+    column-gap: 20px;
+    /* grid-template-rows: repeat(auto-fix,250px); */
+
+}
+
+.grid04{
+    /* border: 2px solid silver; */
+    height: 100%;
+    width: 100%
+}
+
+/* =============================== experience and education =============================== */
+
+
+
+
+
+
+
+
+/* ==================================== Skills ========================================= */
+#skills{
+    margin: 5% 10px 28px 10px;
+    text-align: center;
+}
+#abt2{
+    font-size: var(--h2b);
+    text-shadow: var(--ts);
+}
+
+#sdivmain{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px 10%;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid gold; */
+}
+.sdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 240px;
+    margin: 2%;
+    /* border: 2px solid rgb(255, 128, 0);     */
+}
+.sdiv img{
+    width: 100px;
+    height: auto;
+}
+.sdiv p{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+
+/* ====================================Work experience ====================================== */
+
+#exp{
+    font-size: var(--h2b);
+    /* text-shadow: var(--light-ts); */
+}
+#exph2{
+    margin: 5% 10px 28px 10px;
+    text-align: center;
+    /* text-shadow: 0px 10px 12px rgba(0, 191, 255, 0.8); */
+}
+
+#exp-main{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px 10%;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid gold; */
+}
+.expdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    /* text-align: justify; */
+    height: auto;
+    width: 400px;
+    margin: 1.4%;
+    position: relative;
+    /* border: 1px solid rgb(255, 255, 255);     */
+    /* border-radius: 3%; */
+    box-shadow:0px 1px 5px rgba(255, 255, 255, 0.6) ;
+}
+.expdiv:hover{
+    bottom: 4px;
+    cursor: pointer;
+    box-shadow:0px 8px 18px rgb(246, 246, 246) ;
+}
+.expdiv:active{
+    top:6px;
+    box-shadow:0px 1px 5px rgb(255, 255, 255) ;
+}
+.expdiv h3{
+    padding: 2% 20px;
+    position: relative;
+}
+.expdiv p{
+    text-shadow: none;
+    font-size: 18px;
+    /* text-shadow: 0 3px 5pxrgb(0, 200, 255) ; */
+}
+
+
+
+#hr1{
+    width: 100%;
+    margin-top: 6%;
+    font-weight: 900;
+    /* color: rgba(255, 248, 248, 0.172); */
+    /* box-shadow: 0px 2px 2px rgb(255, 255, 255); */
+    
+}
+
+/* ====================================Work experience ====================================== */
+
+
+#fh2{
+    margin: 5% 10px 28px 10px;
+    text-align: center;
+    /* text-shadow: 0px 10px 12px rgba(0, 191, 255, 0.8); */
+}
+#footer{
+    font-size: var(--h2b);
+    text-shadow: var(--light-ts);
+}
+
+
+
+#cprt{
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------ 3d button -------------------------------------------- */
+
+/* #btn3d{
+    display: block;
+    position: relative;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 900;
+    border-radius: 4px;
+    background: rgb(246, 128, 10);
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    opacity: 0.82;
+    box-shadow: rgba(246, 128, 10, 0.922) 0px 9px 2px,#ffffff 0px 8px 10px; ;
+}
+#btn3d:hover{
+    opacity: 1;
+}
+#btn3d:active{
+    top: 5px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+} */
