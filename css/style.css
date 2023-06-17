@@ -54,6 +54,7 @@ body{
     --h3b: 1.4rem;  /* for h3, h2 and h1*/
     --h2b: 1.8rem;
     --h1b: 2.2rem;
+    --favcolor:#fff;
     /* --light-ts:0px 4px 10px rgb(0, 157, 255, 0.8);
     --light-ts:0px 0px 0px rgb(0, 157, 255, 0.8);
     --ts: 0px 10px 18px rgb(0, 255, 251);
@@ -63,7 +64,8 @@ body{
 
 /* ========================= nav bar ============================ */
 #header{
-    color:white;
+    /* color:white; */
+    color:var(--favcolor);
     /* margin: 0px;    padding:  0px; */
     /* text-shadow: 5px 5px 5px rgb(161, 156, 156); */
 }
@@ -73,7 +75,8 @@ body{
     display: flex;
     justify-content: space-between;
     height: 95px;
-    color:#ffffff;
+    /* color:#ffffff; */
+    color:var(--favcolor);
     /* text-shadow: 5px 5px 5px rgb(0, 0, 0); */
     text-shadow: 2px 4px 0px rgb(0, 0, 0),2px 4px 0px rgb(255, 255, 255),2px 4px 0px rgb(0, 0, 0),2px 4px 10px rgb(255, 255, 255);
     /* text-shadow: 2px 4px 0px rgb(0, 0, 0),2px 4px 0px var(--bgsc),2px 4px 0px rgb(0, 0, 0),2px 4px 10px var(--bgsc); */
@@ -112,7 +115,8 @@ body{
     font-size: 1.7rem;
     font-weight: 950;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color:var(--favcolor);
     text-shadow: none;
     /* text-shadow: 6px 6px 20px rgb(0, 225, 255); */
     position: relative;
@@ -124,6 +128,7 @@ body{
     width: 0;
     height: 4px;
     background: rgb(255, 255, 255);
+    background: var(--favcolor);;
     position: absolute;
     left: 0px;
     bottom: -6px;
@@ -142,7 +147,8 @@ body{
     align-items: center;
 }
 #header-txt{
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color:var(--favcolor);
     width: 55%;
     font-size: 2.1rem;
     font-weight: 900;
@@ -152,7 +158,8 @@ body{
     /* border: 2px solid white; */
 }
 #header-txt span{
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color:var(--favcolor);
     text-shadow: 5px 5px 5px black;
 }
 
@@ -326,7 +333,7 @@ body{
     /* text-align: justify; */
     height: auto;
     width: 400px;
-    margin: 1.4%;
+    margin: 3%;
     position: relative;
     /* border: 1px solid rgb(255, 255, 255);     */
     /* border-radius: 3%; */
@@ -355,40 +362,104 @@ body{
 
 #hr1{
     width: 100%;
-    margin-top: 6%;
+    margin: 3% 0px 5px 0px;
     font-weight: 900;
     /* color: rgba(255, 248, 248, 0.172); */
     /* box-shadow: 0px 2px 2px rgb(255, 255, 255); */
     
 }
 
-/* ====================================Work experience ====================================== */
+/* ==================================== Footer ====================================== */
 
 
-#fh2{
-    margin: 5% 10px 28px 10px;
+/* #fh2{
+    margin: 0% 10px 28px 10px;
     text-align: center;
-    /* text-shadow: 0px 10px 12px rgba(0, 191, 255, 0.8); */
-}
+} */
 #footer{
-    font-size: var(--h2b);
-    text-shadow: var(--light-ts);
+    margin: 0px 0px 10px 0px;
+    /* font-size: var(--h2b); */
+    /* text-shadow: var(--light-ts); */
+}
+#foot-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foot-txt{
+    font-size: 1.6em;
+    margin: -5px 0px;
+
 }
 
 
+/* button */
+#btnconnect{
+    font-size: 24px;
+    margin: 6px 0px;
+    padding: 2px 10px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    background-color: black;
+    box-shadow: 0px 2px 6px white;
+    position: relative;
+}
+#btnconnect:hover{
+    box-shadow: 0px 2px 10px white;
+    cursor: pointer;
+    top: -3px;
+}
+#btnconnect:active{
+    box-shadow: 0px 2px 10px white;
+    cursor: pointer;
+    top: 0px;
+}
 
-#cprt{
-    height: 30px;
+/* social media logo */
+#social-media-logo{
+    margin: 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid wheat; */
+    /* background-color: white;*/
+}
+#social-media-logo img{
+    width: 54px;
+    height: auto;
+    /* border: 2px solid wheat; */
+    /* background-color: white; */
+    padding: 10px 5px 0px 5px;
+    position: relative;
+}
+#social-media-logo img:hover{
+    top: -3px;
+}
+
+/* last line */
+#last023{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    margin: 0px 7px;
+
+}
+#last023 img{ 
+    height: 20px;
     width: auto;
+    margin: 0px 7px;
+    padding: 0x 30px;
     border-radius: 50%;
 }
 
 
 
-
-
-
-
+/* @media only screen and (width<=300px) {
+     {
+    }
+}
+ */
 
 
 
